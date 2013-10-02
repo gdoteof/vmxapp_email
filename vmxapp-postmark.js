@@ -18,8 +18,15 @@ VMX.callback = function(detections){
   var now = new Date().getTime();
   if(detections[0].score > 1){
     if(!last || now > last + 5000){
+      last = new Date().getTime();
       console.log("only every five seconds!",last,now);
       console.log($http.defaults.headers.post);
+      $http.defaults.headers.post = headers;
+      $http.post(url,msg).success(function(response){
+        console.log("success!",response);
+      }).error(function(response){
+        console.log("error", response); 
+      });
     }
   }
 }
