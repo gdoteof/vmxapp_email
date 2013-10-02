@@ -22,7 +22,7 @@ VMX.callback = function(detections){
       console.log("only every five seconds!",last,now);
       console.log($http.defaults.headers.post);
       $http.defaults.headers.post = headers;
-      $http.post(url,msg).success(function(response){
+      $.post(url,msg).success(function(response){
         console.log("success!",response);
       }).error(function(response){
         console.log("error", response); 
