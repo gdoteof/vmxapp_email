@@ -14,10 +14,12 @@ var msg = {
   }
 
 var last = 0;
+var date = new Date();
 VMX.callback = function(detections){
-  var now = new Date().getTime();
+  var now = date.getTime();
   if(detections[0].score > 1){
     if(!last || now < last + 5000){
+      last = date.getTime(); 
       console.log("only every five seconds!");
     }
   }
