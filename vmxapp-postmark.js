@@ -19,6 +19,7 @@ VMX.callback = function(detections){
   if(detections[0].score > 1){
     if(!last || now > last + 5000){
       console.log("only every five seconds!",last,now);
+      console.log($httpProvider.defaults.headers.post);
     }
   }
 }
