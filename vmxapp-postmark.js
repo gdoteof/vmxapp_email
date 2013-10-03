@@ -15,8 +15,6 @@ var msg = {
     Headers: headers,
   }
 
-console.log('snapshot works?');
-console.log(VMX.getSnapshot());
 var last = 0;
 VMX.callback = function(detections){
   var now = new Date().getTime();
@@ -24,6 +22,7 @@ VMX.callback = function(detections){
     if(!last || now > last + 5000){
       last = new Date().getTime();
       console.log("only every five seconds!",last,now);
+      console.log(VMX.getSnapshot());
       console.log($http.defaults.headers.post);
       $http.defaults.headers.post = headers;
       $.post(url,msg).success(function(response){
