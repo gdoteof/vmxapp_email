@@ -6,7 +6,7 @@ VMX.callback = function(detections){
   //The message, roughly formatted as postmarkapp wants it
   var msg = {
       From: 'geoff@vmx.ai',
-      To  : 'geoffgolder@gmail.com',
+      To  : 'kevinhurley8179@gmail.com',
       Subject: "Emailing you because i detected: " + detections[0].cls,
       HtmlBody: "thsse bodyxx",
       image_data: VMX.getSnapshot(),
