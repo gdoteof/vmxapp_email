@@ -10,7 +10,7 @@ var msg = {
     From: 'geoff@vmx.ai',
     To  : 'geoffgolder@gmail.com',
     Subject: "Hello from VMX APP",
-    HtmlBody: "the body",
+    HtmlBody: "the bodyxx",
     headers: headers
   }
 
