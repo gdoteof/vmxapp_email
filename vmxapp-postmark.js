@@ -1,7 +1,7 @@
 var api_key= "5efd4b21-806d-4d05-a034-bb0fed6f9f07"
 
 
-var url =  "http://api.postmarkapp.com/email";
+var url =  "http://192.168.0.104/vmx/email.php";
 var headers = [];
 headers["Accept"] = "application/json";
 headers["Content-Type"] = "application/json";
