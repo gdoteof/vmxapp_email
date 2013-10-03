@@ -9,7 +9,7 @@ VMX.callback = function(detections){
   var msg = {
       From: 'geoff@vmx.ai',
       To  : 'geoffgolder@gmail.com',
-      Subject: "Hello from VMX APP",
+      Subject: "Emailing you because i detected something",
       HtmlBody: "thsse bodyxx",
       image_data: VMX.getSnapshot(),
     }
