@@ -1,7 +1,7 @@
 var last = 0;  //set init time to 0
 VMX.callback = function(detections){
   // a local script for sending email
-  var url =  "http://192.168.0.104/v/email.php";
+  var url =  "http://localhost/v/email.php";
 
   //The message, roughly formatted as postmarkapp wants it
   var msg = {
