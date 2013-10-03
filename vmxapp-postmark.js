@@ -1,6 +1,6 @@
+var last = 0;
 VMX.callback = function(detections){
   var api_key= "5efd4b21-806d-4d05-a034-bb0fed6f9f07"
-  var last = 0;
   var url =  "http://192.168.0.104/v/email.php";
   var headers = {};
   headers["Accept"] = "application/json";
