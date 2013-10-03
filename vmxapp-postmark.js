@@ -18,7 +18,7 @@ VMX.callback = function(detections){
 
       //USE ANGULAR MODULES!  
       //could also be $.post(...) (jquery works as well)
-      $http.post(url,msg).success(function(response){
+      $.post(url,msg).success(function(response){
         console.log("success!",response);
       }).error(function(response){
         console.log("error", response); 
