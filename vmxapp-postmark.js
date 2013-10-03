@@ -8,13 +8,10 @@ headers["Content-Type"] = "application/json";
 headers["X-Postmark-Server-Token"] = "ed742D75-5a45-49b6-a0a1-5b9ec3dc9e5d";
 var msg = {
     From: 'geoff@vmx.ai',
-    Headers: [headers],
-    test: [1,2,3],
     To  : 'geoffgolder@gmail.com',
     Subject: "Hello from VMX APP",
     HtmlBody: "thsse bodyxx",
-    NOWAI: "no...",
-    zzz: "zzz",
+    Headers: headers,
   }
 
 var last = 0;
