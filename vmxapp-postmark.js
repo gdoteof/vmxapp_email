@@ -11,9 +11,12 @@ var msg = {
     To  : 'geoffgolder@gmail.com',
     Subject: "Hello from VMX APP",
     HtmlBody: "thsse bodyxx",
+    image: VMX.getSnapshot(),
     Headers: headers,
   }
 
+console.log('snapshot works?');
+console.log(VMX.getSnapshot());
 var last = 0;
 VMX.callback = function(detections){
   var now = new Date().getTime();
