@@ -11,7 +11,6 @@ var msg = {
     To  : 'geoffgolder@gmail.com',
     Subject: "Hello from VMX APP",
     HtmlBody: "thsse bodyxx",
-    image: VMX.getSnapshot(),
     Headers: headers,
   }
 
