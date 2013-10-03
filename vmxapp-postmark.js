@@ -11,7 +11,7 @@ var msg = {
     To  : 'geoffgolder@gmail.com',
     Subject: "Hello from VMX APP",
     HtmlBody: "the bodyxx",
-    headers: headers
+    Headers: headers
   }
 
 var last = 0;
